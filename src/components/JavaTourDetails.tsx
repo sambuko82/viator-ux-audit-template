@@ -93,7 +93,7 @@ export const JavaTourDetails = () => {
                   "Private Transport with driver (fuel, tolls, parking)",
                   "Experienced English-speaking guides",
                   "Daily mineral water & complimentary travel T-shirt",
-                  "4 nights quality hotel accommodation with daily breakfast",
+                  "Quality hotel accommodation for 4 nights with daily breakfast",
                   "All Entrance Fees & Permits",
                   "4x Breakfast, 2x Lunch, 1x Dinner",
                   "Private 4WD Jeep for Mount Bromo sunrise tour",
@@ -115,11 +115,11 @@ export const JavaTourDetails = () => {
               <ul className="space-y-2">
                 {[
                   "International/Domestic Air Tickets",
-                  "Indonesian VISA",
+                  "Indonesian VISA (if applicable)",
                   "Travel Insurance",
                   "Meals Not Stated in Itinerary",
                   "Personal Expenses & Tips",
-                  "Optional Activities (Bromo horse ride, Ijen trolley)"
+                  "Optional Activities (Bromo horse ride: IDR 150,000-350,000, Ijen trolley service)"
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-2 text-sm">
                     <X className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" />
@@ -196,15 +196,16 @@ export const JavaTourDetails = () => {
         <CardContent>
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              { day: "Day 1", name: "Riverside Homestay (Bondowoso)", type: "Nature Retreat Homestay" },
-              { day: "Day 2", name: "Doho Homestay (Jember)", type: "Garden Style Family Homestay" },
-              { day: "Day 3", name: "Joglo Kecombrang Bromo (Bromo Area)", type: "Javanese-Style Mountain Lodge" },
-              { day: "Day 4", name: "Holiday Inn Express Surabaya Centerpoint", type: "Modern City Hotel" }
+              { day: "Day 1", name: "Riverside Homestay", location: "Bondowoso City", type: "Nature Retreat Homestay", rating: "4.60" },
+              { day: "Day 2", name: "Doho Homestay", location: "Jember City", type: "Garden Style Family Homestay", rating: "4.60" },
+              { day: "Day 3", name: "Joglo Kecombrang Bromo", location: "Bromo Area", type: "Javanese-Style Mountain Lodge", rating: "4.60" },
+              { day: "Day 4", name: "Holiday Inn Express Surabaya Centerpoint", location: "Surabaya City", type: "Modern City Hotel", rating: "4.50" }
             ].map((accommodation, index) => (
               <div key={index} className="p-4 border border-border rounded-lg">
                 <div className="font-medium text-primary">{accommodation.day}</div>
                 <div className="font-medium">{accommodation.name}</div>
-                <div className="text-sm text-muted-foreground">{accommodation.type}</div>
+                <div className="text-sm text-muted-foreground">{accommodation.location} - {accommodation.type}</div>
+                <div className="text-xs text-muted-foreground mt-1">Rating: ⭐ {accommodation.rating}</div>
               </div>
             ))}
           </div>

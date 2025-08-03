@@ -2,16 +2,48 @@ import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Heart, Share2, Play } from "lucide-react";
-import bromoImage from "@/assets/bromo-sunrise.jpg";
-import ijenImage from "@/assets/ijen-crater.jpg";
-import tumpakImage from "@/assets/tumpak-sewu.jpg";
-import papumaImage from "@/assets/papuma-beach.jpg";
 
 const javaImages = [
-  { src: bromoImage, alt: "Stunning sunrise over Mount Bromo with panoramic views of the volcanic landscape", isVideo: false },
-  { src: ijenImage, alt: "Ijen Crater with turquoise acidic lake and blue flames phenomenon", isVideo: false },
-  { src: tumpakImage, alt: "Spectacular tiered Tumpak Sewu waterfall cascading through lush green cliffs", isVideo: false },
-  { src: papumaImage, alt: "Scenic white-sand Papuma Beach with dramatic rocks and crystal clear waters", isVideo: false },
+  { 
+    src: "https://javavolcano-touroperator.com/assets/img/destinations/ijen-bromo-tumpak-sewu-malang-sightseeing-tour-1676526893742/1687320433_IJEN31.webp", 
+    alt: "Stunning sunrise over Mount Bromo with panoramic views of the Tengger Caldera and surrounding mountains",
+    caption: "Sunrise View Over Mount Bromo"
+  },
+  { 
+    src: "https://javavolcano-touroperator.com/assets/img/destinations/surabaya-ijen-papuma-beach-tumpak-sewu-bromo-surabaya-(5d-4n)-1688629701719/bromo11.webp", 
+    alt: "Hikers enjoying the incredible views of Ijen Crater's blue lake",
+    caption: "Hikers enjoying the incredible views of Ijen Crater's blue lake"
+  },
+  { 
+    src: "https://javavolcano-touroperator.com/assets/img/destinations/surabaya-ijen-papuma-beach-tumpak-sewu-bromo-surabaya-(5d-4n)-1688629701719/bromo13.webp", 
+    alt: "Young travelers having fun exploring Tumpak Sewu waterfall area",
+    caption: "Exploring Tumpak Sewu waterfall and enjoying every moment"
+  },
+  { 
+    src: "https://javavolcano-touroperator.com/assets/img/destinations/surabaya-ijen-papuma-beach-tumpak-sewu-bromo-surabaya-(5d-4n)-1688629701719/papuma.webp", 
+    alt: "Papuma Beach with white sand and crystal clear waters",
+    caption: "Papuma Beach"
+  },
+  { 
+    src: "https://javavolcano-touroperator.com/assets/img/destinations/surabaya-ijen-papuma-beach-tumpak-sewu-bromo-surabaya-(5d-4n)-1688629701719/papuma3.webp", 
+    alt: "Scenic Papuma Beach coastline with dramatic rocks",
+    caption: "Papuma Beach"
+  },
+  { 
+    src: "https://javavolcano-touroperator.com/assets/img/destinations/surabaya-ijen-papuma-beach-tumpak-sewu-bromo-surabaya-(5d-4n)-1688629701719/tumpaksewu6.webp", 
+    alt: "Spectacular Tumpak Sewu Waterfall cascading down lush cliffs",
+    caption: "Tumpak Sewu Waterfall"
+  },
+  { 
+    src: "https://javavolcano-touroperator.com/assets/img/destinations/surabaya-ijen-papuma-beach-tumpak-sewu-bromo-surabaya-(5d-4n)-1688629701719/1687447787_WhatsApp Image 2019-05-12 at 2.webp", 
+    alt: "Sunrise view over Ijen Crater",
+    caption: "Sunrise over Ijen Crater"
+  },
+  { 
+    src: "https://javavolcano-touroperator.com/assets/img/destinations/fb3.jpg", 
+    alt: "Majestic Tumpak Sewu waterfall surrounded by tropical vegetation",
+    caption: "Tumpak Sewu"
+  }
 ];
 
 export const JavaTourGallery = () => {
@@ -27,7 +59,7 @@ export const JavaTourGallery = () => {
             alt={javaImages[selectedImage].alt}
             className="w-full h-full object-cover"
           />
-          {javaImages[selectedImage].isVideo && (
+          {false && (
             <div className="absolute inset-0 flex items-center justify-center bg-black/20">
               <Button size="lg" variant="floating" className="rounded-full">
                 <Play className="w-6 h-6" />
@@ -63,7 +95,7 @@ export const JavaTourGallery = () => {
                 alt={image.alt}
                 className="w-full h-full object-cover"
               />
-              {image.isVideo && (
+              {false && (
                 <div className="absolute inset-0 flex items-center justify-center bg-black/20">
                   <Play className="w-4 h-4 text-white" />
                 </div>

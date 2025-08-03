@@ -1,6 +1,7 @@
 import { JavaTourGallery } from "@/components/JavaTourGallery";
 import { JavaBookingWidget } from "@/components/JavaBookingWidget";
 import { JavaTourDetails } from "@/components/JavaTourDetails";
+import { JavaTermsSection } from "@/components/JavaTermsSection";
 import { JavaFAQSection } from "@/components/JavaFAQSection";
 import { JavaMobileBookingBar } from "@/components/JavaMobileBookingBar";
 import { Badge } from "@/components/ui/badge";
@@ -78,6 +79,7 @@ const Index = () => {
           <div className="lg:col-span-2 space-y-8">
             <JavaTourGallery />
             <JavaTourDetails />
+            <JavaTermsSection />
             <JavaFAQSection />
           </div>
 

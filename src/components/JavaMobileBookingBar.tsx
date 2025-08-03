@@ -8,7 +8,7 @@ export const JavaMobileBookingBar = () => {
       <div className="flex items-center justify-between gap-4">
         <div className="flex-1">
           <div className="flex items-center gap-2 mb-1">
-            <span className="text-xl font-bold text-primary">IDR 2,850,000</span>
+            <span className="text-xl font-bold text-primary">IDR 5,050,000</span>
             <span className="text-sm text-muted-foreground">per person</span>
           </div>
           <Badge variant="secondary" className="text-xs">

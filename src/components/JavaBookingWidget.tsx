@@ -5,13 +5,13 @@ import { Badge } from "@/components/ui/badge";
 import { Calendar, Users, Shield } from "lucide-react";
 
 const groupPrices = [
-  { size: "1 person", price: 3650000 },
-  { size: "2 people", price: 2850000 },
-  { size: "3 people", price: 2350000 },
-  { size: "4-5 people", price: 1950000 },
-  { size: "6-7 people", price: 1750000 },
-  { size: "8-10 people", price: 1650000 },
-  { size: "11+ people", price: 1550000 }
+  { size: "Solo Traveler", price: 9050000 },
+  { size: "2 Pax", price: 5050000 },
+  { size: "3 Pax", price: 4850000 },
+  { size: "4 - 5 Pax", price: 4550000 },
+  { size: "6 - 7 Pax", price: 4250000 },
+  { size: "8 - 10 Pax", price: 3850000 },
+  { size: "11 + Pax", price: 3650000 }
 ];
 
 export const JavaBookingWidget = () => {
